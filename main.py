@@ -1,3 +1,4 @@
+import os
 import discord
 from discord.ext import commands
 import asyncio
@@ -46,4 +47,4 @@ async def lasttoleave(ctx):
     await vc.disconnect()
 
 
-bot.run('TOKEN')
+bot.run(os.environ['DISCORD_TOKEN'])
